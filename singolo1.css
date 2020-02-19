@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'LatoBold';
+    src: url('assets/fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('assets/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('assets/fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('assets/fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+         url('assets/fonts/Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'LatoBold';
+    src: url('assets/fonts/Lato-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('assets/fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('assets/fonts/Lato-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('assets/fonts/Lato-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('assets/fonts/Lato-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-size: 16px;
+}
+
+.header {
+  max-width: 1020px;
+  background-color: #2d303a;
+  margin: 0 auto;
+  font-size: 25px;
+  border-bottom: 6px solid #323746;
+  font-family: 'LatoBold';
+}
+
+.header__wrapper {
+  width: 945px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;  
+  justify-content: space-between;
+}
+
+.header__logo h1 {
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 31px;
+  margin-bottom: 28px; 
+  font-size: 25px;
+}
+
+.header__logo span {
+  color: #f06c64;
+}
+
+.header__nav {
+  margin-top: 32px;
+}
+
+.header__nav ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.header__nav a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 15px;	
+}
+
+.header__nav li:not(:last-child)::after {
+  content: "·";
+  color: #494e62;
+  margin-left: 10px;
+}
+
+.header__nav a:hover {
+  color: #f06c64;
+  cursor: pointer;
+}
