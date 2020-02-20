@@ -78,6 +78,7 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  position: relative;
 }
 
 .header__nav a {
@@ -85,13 +86,16 @@ body {
   color: #fff;
   font-size: 12px;
   font-weight: bold;
-  margin-left: 15px;	
+  margin-left: 15px;
+  padding-left: 15px;
 }
 
 .header__nav li:not(:last-child)::after {
+  position: absolute;
   content: "·";
   color: #494e62;
-  margin-left: 10px;
+  padding-left: 11px;
+  padding-top: 2px;
 }
 
 .header__nav a:hover {
