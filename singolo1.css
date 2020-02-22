@@ -233,10 +233,6 @@ body {
   height: 124px;
 }
 
-.services__list li:nth-child(2) p { 
-  font-family: 'LatoLight';
-}
-
 .services__image {
   margin-right: 20px;
 }
