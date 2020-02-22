@@ -102,3 +102,57 @@ body {
   color: #f06c64;
   cursor: pointer;
 }
+
+.main__slider {
+  max-width: 1020px;
+  background-color: #f06c64;
+  margin: 0 auto;
+  border-bottom: 6px solid #ea676b;
+  position: relative;  
+}
+
+.main__slider::before {
+  position: absolute;
+  content: "";
+  background-image: url(assets/img/left-arrow.png);  
+}
+
+.main__slider::after {
+  position: absolute;
+  content: "";
+  background-image: url(assets/img/right-arrow.png);
+}
+
+.slider__left-phone {
+  margin: 53px 69px 55px 112px;
+}
+
+.slider__right-phone {
+  margin-bottom: 176px;
+}
+
+.slider__controls {
+  position: relative;  
+}
+
+.controls__left {
+  position: absolute;
+  bottom: 287px;
+  left: 42px;
+}
+
+.controls__right {
+  position: absolute;
+  bottom: 287px;
+  right: 40px;
+}
+
+.controls__left:hover {
+  transform: scale(1.5);
+  cursor: pointer;  
+}
+
+.controls__right:hover {
+  transform: scale(1.5);
+  cursor: pointer; 
+}
