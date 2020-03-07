@@ -78,9 +78,25 @@ body {
 
 .quote__heading {
   font-size: 30px;
-  padding-top: 67px;
+  padding-top: 62px;
   padding-left: 3px;
-  padding-bottom: 32px;
+  padding-bottom: 19px;
+  letter-spacing: -0.23px;
+}
+
+.quote__paragraph {
+  font-family: 'LatoLight';
+  font-size: 18px;
+  color: #f0d8d9;
+  padding-left: 3px;
+  text-align: justify;
+  letter-spacing: -0.23px;
+  line-height: 28px;
+  padding-bottom: 40px;
+}
+
+.form__wrapper {
+  display: flex;
 }
 
 .footer {
