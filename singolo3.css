@@ -70,8 +70,7 @@ body {
   color: #f0d8d9; 
  }
 
-.quote__wrapper,
-.footer__wrapper {
+.quote__wrapper {
   width: 945px;
   margin: 0 auto;
  }
@@ -179,6 +178,32 @@ body {
   background-color: #2d303a; 
  }
 
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 965px;
+  margin: 0 auto;
+}
+
 .footer__copyright {
-  color: #575d74;
-} 
+  padding-top: 15px;
+  padding-bottom: 5px;  
+}
+
+.footer__copyright {
+  color: #575d74;  
+  padding-top: 31px;
+  padding-left: 4px;
+  padding-bottom: 31px;
+  font-size: 12px;
+  font-family: 'Lato';
+}
+
+.footer__social {
+  padding-top: 22px;
+  padding-right: 13px;
+}
+
+.footer__social img {
+  margin-left: 4px;
+}
