@@ -80,7 +80,7 @@ body {
   font-size: 30px;
   padding-top: 62px;
   padding-left: 3px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
   letter-spacing: -0.23px;
 }
 
@@ -91,12 +91,86 @@ body {
   padding-left: 3px;
   text-align: justify;
   letter-spacing: -0.23px;
-  line-height: 28px;
-  padding-bottom: 40px;
+  line-height: 29px;
+  padding-bottom: 43px;
 }
 
 .form__wrapper {
   display: flex;
+  margin-left: 3px;
+  justify-content: space-between;
+}
+
+.quote___input {
+  width: 619px;
+  height: 38px;
+  border: none;
+  background-color: #d6564f;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  color: #f48c8f;
+  font-family: 'Lato';
+  font-size: 12px;
+  padding-left: 15px;
+}
+
+.quote___input::placeholder {
+  color: #f48c8f;
+  opacity: 1;
+}
+
+.textarea {
+  height: 202px;
+  padding-top: 11px;
+  resize: none;
+}
+
+.btn {
+  width: 95px;
+  border: 1px solid #f48c8f;
+  padding-left: 0;
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.quote___form {
+  margin-right: 21px;
+  width: 619px;
+}
+
+.contacts__heading {
+  font-family: 'LatoBlack';
+  font-size: 18px;
+}
+
+.contacts__paragraph {
+  font-family: 'Lato';
+  font-size: 12px;
+  padding-top: 7px;
+  line-height: 21px;
+  text-align: justify;
+}
+
+.contacts__contacts {  
+  font-family: 'Lato';
+  font-size: 12px;
+  padding-top: 25px;
+  line-height: 21px;
+  text-align: justify;
+}
+
+.contacts__contacts a {
+  color: #f0d8d9;
+}
+
+.contacts__contacts img {
+  padding-left: 2px;
+  padding-right: 13px;
 }
 
 .footer {
