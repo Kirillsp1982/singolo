@@ -471,6 +471,11 @@
     opacity: 1;
   }
   
+  .quote___input::-webkit-input-placeholder {
+    color: #f48c8f;
+    opacity: 1;
+  }
+
   .textarea {
     height: 202px;
     padding-top: 11px;
@@ -546,7 +551,7 @@
   .footer__copyright {
     color: #575d74;  
     padding-top: 31px;
-    padding-left: 4px;
+    padding-left: 14px;
     padding-bottom: 31px;
     font-size: 12px;
     font-family: 'Lato';
