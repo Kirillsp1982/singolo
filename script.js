@@ -6,6 +6,8 @@ const RIGHTPHONE = document.getElementById('right-phone');
 const SLIDER = document.getElementById('main__slider');
 const LEFTARROW = document.getElementById('controls__left');
 const RIGHARROW = document.getElementById('controls__right');
+const QUOTEBTN = document.getElementById('quote___btn');
+const POPUP = document.getElementById('popup');
 const IMAGES = GALARY.querySelectorAll('img');
 let i = 0;
 
@@ -30,30 +32,29 @@ TAB.addEventListener('click', (event) => {
 
 LEFTPHONE.addEventListener('click', (event) => {
 	const IMAGE = LEFTPHONE.querySelectorAll('img');
-	IMAGE[0].classList.toggle("hidden");
+	IMAGE[0].classList.toggle('hidden');
 	IMAGE[1].classList.toggle('hidden');
 });
 
 RIGHTPHONE.addEventListener('click', (event) => {
 	const IMAGE = RIGHTPHONE.querySelectorAll('img');
-	IMAGE[0].classList.toggle("hidden");
+	IMAGE[0].classList.toggle('hidden');
 	IMAGE[1].classList.toggle('hidden');
 });
- 
-
-
-
-
-
 
 LEFTARROW.addEventListener('click', (event) => {
 	const IMAGE = SLIDER.querySelectorAll('.slide');
-	IMAGE[0].classList.toggle("hidden");
+	IMAGE[0].classList.toggle('hidden');
 	IMAGE[1].classList.toggle('hidden');
 });
 
 RIGHARROW.addEventListener('click', (event) => {
 	const IMAGE = SLIDER.querySelectorAll('.slide');
-	IMAGE[0].classList.toggle("hidden");
+	IMAGE[0].classList.toggle('hidden');
 	IMAGE[1].classList.toggle('hidden');
+});
+
+QUOTEBTN.addEventListener('click', (event) => {
+	event.preventDefault();
+	POPUP.classList.remove('hidden');
 });

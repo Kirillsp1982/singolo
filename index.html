@@ -171,7 +171,7 @@
               <input type="email" class="quote___input" placeholder="Email (Required)" required>
               <input type="text" class="quote___input" placeholder="Subject">
               <textarea class="quote___input textarea">Describe your project in detail...</textarea>
-              <button class="quote___input btn">Submit</button>
+              <button class="quote___input btn" id="quote___btn">Submit</button>
             </form>
             <div class="quote__contacts">
               <h3 class="contacts__heading">Contact Information</h3>
@@ -196,6 +196,13 @@
       </div>
     </div>    
   </footer>
+  <div class="popup hidden" id="popup">
+    <div class="popup__content">
+      <p>The letter was sent</p>
+      <p class="popup__subject">Without subject</p>
+      <p class="popup__description">Without description</p>
+      <button class="popup__button quote___input btn">OK</button>
+    </div>
   <script src="script.js"></script>
 </body>
 </html>
