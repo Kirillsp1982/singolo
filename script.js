@@ -7,8 +7,12 @@ const SLIDER = document.getElementById('main__slider');
 const LEFTARROW = document.getElementById('controls__left');
 const RIGHARROW = document.getElementById('controls__right');
 const QUOTEBTN = document.getElementById('quote___btn');
+const POPUPBTN = document.getElementById('popup__btn');
 const POPUP = document.getElementById('popup');
+const POPUPSUBJECT = document.getElementById('popup__subject');
+const POPUPDESCRIBE = document.getElementById('popup__description');
 const IMAGES = GALARY.querySelectorAll('img');
+
 let i = 0;
 
 MENU.addEventListener('click', (event) => {
@@ -56,5 +60,15 @@ RIGHARROW.addEventListener('click', (event) => {
 
 QUOTEBTN.addEventListener('click', (event) => {
 	event.preventDefault();
+	const SUBJECT = document.getElementById('subject').value;
+	const DESCRIBE = document.getElementById('describe').value;		
 	POPUP.classList.remove('hidden');
+	if (SUBJECT) POPUPSUBJECT.innerText = `Subject: ${SUBJECT}`;
+	if (DESCRIBE) POPUPDESCRIBE.innerText = `Description: ${DESCRIBE}`;
 });
+
+POPUP.addEventListener('click', (event) => {
+	event.preventDefault();
+	POPUP.classList.add('hidden');
+});
+
