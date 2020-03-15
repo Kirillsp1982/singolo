@@ -129,6 +129,10 @@
     cursor: pointer;
   }
   
+  a.menu_active {
+    color: #f06c64;
+  }
+
   .main__slider {
     max-width: 1020px;
     background-color: #f06c64;
@@ -141,14 +145,23 @@
     margin: 53px 69px 54px 112px;
   }
   
-  .slider__right-phone {
-    margin-bottom: 176px;
+  .slider__right-phone img{
+    margin-top: 174px;
+    margin-left: 4px;
   }
   
   .slider__controls {
     position: relative;  
   }
-  
+
+  .slide {
+    display: flex;
+  }
+
+  .hidden {
+    display: none;
+  }
+
   .controls__left {
     position: absolute;
     bottom: 287px;
@@ -290,6 +303,7 @@
   .portfolio__buttons {
     padding-top: 2px;
     padding-bottom: 18px;
+    display: inline-block;
    }
   
   .portfolio__button {
@@ -312,6 +326,11 @@
     border: 1px solid #c5c5c5;
    }
   
+   button.button_active {
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+   }
+
   .portfolio__galary {
     display: -webkit-flex;
     display: -moz-flex;
@@ -328,14 +347,18 @@
    }
   
   .portfolio__galary img {
-    padding-left: 3px;
-    padding-bottom: 20px;
+    margin-left: 3px;
+    margin-bottom: 20px;
    }
   
   .portfolio__galary img:nth-child(n + 13) {
      display: none;
-   }
+   }  
   
+   img.galary_active {
+    border: 5px solid #f06c64;
+  }
+
    .aboutUs {
     max-width: 1020px;
     margin: 0 auto;
@@ -571,3 +594,5 @@
     transform: scale(1.3);
     cursor: pointer; 
   }
+  
+  

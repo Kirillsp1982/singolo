@@ -6,32 +6,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <div class="header__wrapper">
       <div class="header__logo">
         <h1>singolo<span>*</span></h1>
     </div>
       <nav class="header__nav">
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
+        <ul id="menu">
+          <li><a href="#home">home</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-		<section class="main__slider">
-      <img class="slider__left-phone" src="assets/img/left-phone.png" alt="phone">
-      <img class="slider__right-phone"src="assets/img/right-phone.png" alt="phone">
+		<section class="main__slider" id="main__slider">
+      <div class="slide">
+        <div class="slider__left-phone" id="left-phone">
+          <img src="assets/img/left-phone.png" alt="phone">
+          <img class="hidden" src="assets/img/left-phone_off.png" alt="phone">
+        </div>
+        <div class="slider__right-phone" id="right-phone">
+          <img src="assets/img/right-phone.png" alt="phone">
+          <img class="hidden"src="assets/img/right-phone_off.png" alt="phone">
+        </div>        
+      </div>  
+      <div class="slide hidden">
+        <img src="assets/img/Slide-2.png" alt="phone">
+      </div>    
       <div class="slider__controls">
-        <img class="controls__left" src="assets/img/left-arrow.png" alt="left arrow">
-        <img class="controls__right" src="assets/img/right-arrow.png" alt="right arrow">
+        <img class="controls__left" id="controls__left" src="assets/img/left-arrow.png" alt="left arrow">
+        <img class="controls__right" id="controls__right" src="assets/img/right-arrow.png" alt="right arrow">
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__wrapper">
         <div class="services__info">
           <h2>Our Services</h2>
@@ -83,33 +94,33 @@
         </ul>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="portfolio__wrapper">
           <h2 class="portfolio__heading">Portfolio</h2>
           <p class="portfolio__paragraph">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-          <div class="portfolio__buttons">
+          <div class="portfolio__buttons" id="portfolio__buttons">
             <button class="portfolio__button">All</button>
             <button class="portfolio__button">Web Design</button>
             <button class="portfolio__button">Graphic Design</button>
             <button class="portfolio__button">Artwork</button>
           </div>
-          <div class="portfolio__galary">
-            <img src="assets/img/galery_1.jpg" alt="image">
-            <img src="assets/img/galery_2.jpg" alt="image">
-            <img src="assets/img/galery_3.jpg" alt="image">
-            <img src="assets/img/galery_4.jpg" alt="image">
-            <img src="assets/img/galery_5.jpg" alt="image">
-            <img src="assets/img/galery_6.jpg" alt="image">
-            <img src="assets/img/galery_7.jpg" alt="image">
-            <img src="assets/img/galery_8.jpg" alt="image">
-            <img src="assets/img/galery_9.jpg" alt="image">
-            <img src="assets/img/galery_10.jpg" alt="image">
-            <img src="assets/img/galery_11.jpg" alt="image">
-            <img src="assets/img/galery_12.jpg" alt="image">
+          <div class="portfolio__galary" id="galary">
+            <img src="assets/img/galery_1.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_2.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_3.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_4.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_5.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_6.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_7.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_8.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_9.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_10.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_11.jpg" alt="image" width="220" height="187">
+            <img src="assets/img/galery_12.jpg" alt="image" width="220" height="187">
           </div>
         </div>      
       </section>
-      <section class="aboutUs">
+      <section class="aboutUs" id="about">
         <div class="aboutUs__wrapper">
           <h2 class="aboutUs__heading">About Us</h2>
           <p class="aboutUs__paragraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -150,7 +161,7 @@
           </div>
         </div>
       </section>
-      <section class="quote">
+      <section class="quote" id="contact">
         <div class="quote__wrapper">
           <h2 class="quote__heading">Get a Quote</h2>
           <p class="quote__paragraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -185,5 +196,6 @@
       </div>
     </div>    
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
