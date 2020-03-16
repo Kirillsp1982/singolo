@@ -11,6 +11,7 @@ const POPUPBTN = document.getElementById('popup__btn');
 const POPUP = document.getElementById('popup');
 const POPUPSUBJECT = document.getElementById('popup__subject');
 const POPUPDESCRIBE = document.getElementById('popup__description');
+const DESCRIBETEXTAREA = document.getElementById('describe');	
 const IMAGES = GALARY.querySelectorAll('img');
 
 let i = 0;
@@ -58,17 +59,20 @@ RIGHARROW.addEventListener('click', (event) => {
 	IMAGE[1].classList.toggle('hidden');
 });
 
+DESCRIBETEXTAREA.addEventListener('click', (event) => {
+	DESCRIBETEXTAREA.value = '';
+});
+
 QUOTEBTN.addEventListener('click', (event) => {
 	event.preventDefault();
 	const SUBJECT = document.getElementById('subject').value;
-	const DESCRIBE = document.getElementById('describe').value;		
+	const DESCRIBE = DESCRIBETEXTAREA.value;		
 	POPUP.classList.remove('hidden');
 	if (SUBJECT) POPUPSUBJECT.innerText = `Subject: ${SUBJECT}`;
-	if (DESCRIBE) POPUPDESCRIBE.innerText = `Description: ${DESCRIBE}`;
+	if (DESCRIBE && DESCRIBE !== 'Describe your project in detail...') POPUPDESCRIBE.innerText = `Description: ${DESCRIBE}`;
 });
 
 POPUP.addEventListener('click', (event) => {
 	event.preventDefault();
 	POPUP.classList.add('hidden');
 });
-
