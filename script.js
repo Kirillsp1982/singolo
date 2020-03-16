@@ -72,7 +72,7 @@ QUOTEBTN.addEventListener('click', (event) => {
 	if (DESCRIBE && DESCRIBE !== 'Describe your project in detail...') POPUPDESCRIBE.innerText = `Description: ${DESCRIBE}`;
 });
 
-POPUP.addEventListener('click', (event) => {
+POPUPBTN.addEventListener('click', (event) => {
 	event.preventDefault();
 	POPUP.classList.add('hidden');
 });
