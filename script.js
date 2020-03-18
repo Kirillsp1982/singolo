@@ -77,4 +77,3 @@ POPUPBTN.addEventListener('click', (event) => {
 	POPUP.classList.add('hidden');
 	document.getElementById('quote___form').reset();
 });
-});
