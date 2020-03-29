@@ -772,5 +772,148 @@
     padding-right: 2px;
   }
 }
-}  
+
+@media (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+  
+  .header__logo {
+	margin: 0 auto;
+  }
+  
+  .header__logo h1 {
+    margin-top: 26px;
+    margin-bottom: 15px;
+    font-size: 20px;
+	margin-left: 15px;
+  }
+  
+  .slider__left-phone {
+    margin: 20px 22px 13px 41px;
+  }
+  
+  .slider__left-phone img {
+    width: 88px;
+  }
+  
+  .slider__right-phone img {
+    width: 178px;
+    margin-top: 65px;
+  }
+  
+  .controls__left {
+    bottom: 89px;
+    left: 9px;
+  }
+  
+  .controls__right {
+    bottom: 89px;
+    right: 9px;
+  }
+  
+  .services__wrapper,
+  .portfolio__wrapper,
+  .aboutUs__wrapper,
+  .quote__wrapper,
+  .footer__wrapper {
+    margin: 0 28px;
+  }
+  
+  .services {
+    padding-bottom: 0px;
+  }
+  
+  .services__info {
+    padding-top: 30px;
+  }
+  
+  .services__list {
+    margin-top: 21px;
+  }
+  
+  .services__list li {
+    width: 300px;
+    height: 119px;
+  }
+  
+  .portfolio__heading {
+    padding-top: 38px;
+  }
+  
+  .portfolio__buttons {
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+  
+  
+  .portfolio__galary {
+	padding-bottom: 21px;
+  }
+  
+  .portfolio__galary img {
+	width: 152px;
+	height: 129px;
+	margin-bottom: 13px;
+  }
+  
+  .portfolio__galary img:nth-child(n + 9) {
+    display: none;
+  } 
+  
+  .aboutUs__heading {
+    padding-top: 37px;
+  }	
+  .aboutUs__paragraph {
+	padding-right: 20px;
+	padding-bottom: 21px;
+  }
+  
+  .aboutUs__persons {
+	  display: block;
+	  padding-bottom: 5px;
+  }
+  
+  .aboutUs__card {
+    width: 100%;
+  }
+  
+  .aboutUs__card h3 {
+    padding-top: 11px;
+  }
+  
+  .aboutUs__icons {
+    padding-bottom: 30px;
+  }
+  
+  .quote__heading {
+    padding-top: 47px;
+  }
+  
+  .quote__paragraph {
+    line-height: 30px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+  }
+  
+  .form__wrapper {
+    display: block;
+  }
+  
+  .quote___input {
+    max-width: 318px;
+	margin-bottom: 11px;
+  }
+  
+  .btn {
+    width: 320px;
+	height: 52px;
+	margin-bottom: 29px;
+  }
+  
+  .contacts__contacts {
+    line-height: 25px;
+  }
+}
+  
   
