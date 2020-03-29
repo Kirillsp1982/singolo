@@ -886,6 +886,10 @@
     padding-bottom: 30px;
   }
   
+  .quote {
+	padding-bottom: 32px;
+  }
+  
   .quote__heading {
     padding-top: 47px;
   }
@@ -914,6 +918,16 @@
   .contacts__contacts {
     line-height: 25px;
   }
+  
+  .footer__copyright {
+	display: none;
+  }
+  
+  .footer__social {
+    margin: 0 auto;
+	padding-bottom: 17px;
+  }
+  
 }
   
   
